@@ -17,7 +17,13 @@ namespace ConsoleApp2
                 this.Judet = Judet;
                 this.numar = numar;
                 this.litere = litere;
+              
             }
+            public string GetDescription()
+            {
+                return this.NumarInmatriculare;
+            }
+            
             public void Tipareste()
             {
                 Console.WriteLine("Numar Inmatriculare este:{judet} {numar} {litere}");
@@ -65,13 +71,13 @@ namespace ConsoleApp2
                     public Masina(string Marca, int CapacitateCilindrica, string NumarInmatriculare)
                     {
                         this.marca = marca;
-                        this.NumarInmatriculare = numarinmatriculare;
+                        this.NumarInmatriculare = NumarInmatriculare;
                         this.capacitateCilindrica = capacitateCilindrica;
                     }
                     public void Tipareste()
                     {
                         Console.WriteLine("Masina cu marca");
-                        marca.Tipareste();
+                        Marca.Tipareste();
                         Console.WriteLine("Masina cu numarul de inmatriculare");
                         NumarInmatriculare.Tipareste();
                         Console.WriteLine("Masina cu o capacitate cilindrica");

@@ -56,13 +56,29 @@ namespace ConsoleApp2
                     Console.WriteLine("Capacitate cilindrica este:{capacitate}");
                 }
 
-namespace lab6ex2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+                class Masina
+                {
+                    private Marca[] marca;
+                    private NumarInmatriculare NumarInmatriculare;
+                    private CapacitateCilindrica capacitateCilindrica;
+
+                    public Masina(string Marca, int CapacitateCilindrica, string NumarInmatriculare)
+                    {
+                        this.marca = marca;
+                        this.NumarInmatriculare = numarinmatriculare;
+                        this.capacitateCilindrica = capacitateCilindrica;
+                    }
+                    public void Tipareste()
+                    {
+                        Console.WriteLine("Masina cu marca");
+                        marca.Tipareste();
+                        Console.WriteLine("Masina cu numarul de inmatriculare");
+                        NumarInmatriculare.Tipareste();
+                        Console.WriteLine("Masina cu o capacitate cilindrica");
+                        capacitateCilindrica.Tipareste();
+                    }
+                }
+            }
         }
     }
 }
